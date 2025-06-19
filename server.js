@@ -209,3 +209,7 @@ const PORT = process.env.PORT || 5000;
 server.listen(PORT, () => {
     console.log(`✅ Server running at http://localhost:${PORT}`);
 });
+
+
+export default app; // Export the app for testing or further use
+export { io };
