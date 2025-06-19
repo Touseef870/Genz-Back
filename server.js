@@ -24,7 +24,7 @@ mongoose.connection.on("connected", () => {
 app.get("/", (req, res) => {
     // res.send("Socket.IO backend running...");
     res.status(200).json({ 
-        message: "Socket.IO backend running successfully",
+        message: "Socket.IO backend running successfully, ✅ MongoDB connected",
         status: "success"
      })
 });
