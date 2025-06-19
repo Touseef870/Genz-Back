@@ -22,7 +22,11 @@ mongoose.connection.on("connected", () => {
 
 // Serve a simple test route
 app.get("/", (req, res) => {
-    res.send("Socket.IO backend running...");
+    // res.send("Socket.IO backend running...");
+    res.status(200).json({ 
+        message: "Socket.IO backend running successfully",
+        status: "success"
+     })
 });
 
 // Socket.io server
